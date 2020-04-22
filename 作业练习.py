@@ -157,7 +157,7 @@ print(studentlist[a]) =
 # if 5<= len(username) <= 11:
 #     if username[0] not in "-":
 #         if 6<= len(password) <= 12:
-#             print("注册成功!请返回重新登陆")
+#             print("注册成功!请返回重新登陆验证！")
 #         else:
 #             print("密码必须6-12位")
 #     else:
@@ -165,4 +165,19 @@ print(studentlist[a]) =
 # else:
 #     print("账号的长度不符合规范，请输入5-8位账号")
 
+Name = input("请输入你的姓名：")
+Age = input("请输入你的年龄：")
+try:
+    if int(Age) >= 18:
+        print(Name,"已经成年了")
+    else:
+        print(Name,"尚未成年")
+except:
+    print("请输入正确的年龄")
+""" try:  
 
+
+    except:    使用场景：当我们无法判断用户输入的数据是否正确的情况下
+这也是测试时为什么要输入不同的数据类型，你控制得了编码，但你控制不住用户输入的数据   
+处理用户输入的数据
+"""

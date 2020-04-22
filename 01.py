@@ -247,7 +247,7 @@ while 表达式：
 # a = 1
 # while a < 10:
 #     print("Hello,Python",a)
-#     break # 中断死循环
+#     break # 终止循环或跳出循环（只针对本层循环，嵌套循环不能终止全部）
 #     a = a + 1
 
 # for 循环 原理： 遍历实现 
@@ -255,18 +255,18 @@ while 表达式：
 # a = "你好，今天你吃了吗？"
 # print(len(a)) 
                  #两者输出len的值不同
-a = "张三","李四","王麻子","浪晋","流云","希希","小梁","二狗"
+# a = "张三","李四","王麻子","浪晋","流云","希希","小梁","二狗"
 # print(len(a))
-for i in a:   # 遍历，每一个都打印一遍  i是一个变量名
-    print(i)
+# for i in a:   # 遍历，每一个都打印一遍  i是一个变量名
+#     print(i)
 
 # range()数列生成器  
 # b = list(range(100)) #自动生成了一个数列  左闭右开   只写一个值，默认从0开始依次
 # b = list(range(0,100,2)) # 步进/步长  默认从0开始按步进依次
 # print(b)
 
-for i in range(100):
-    print(i)
+# for i in range(100):
+#     print(i)
 
 # 打印九九乘法表
 # for i in range(1,10):
@@ -283,9 +283,56 @@ for i in range(100):
 # #python 独有的 列表（数组）推导式 或字典推导式
 # blist = [i*i for i in range(1,11) if(i%2)==0]
 # print(blist)
+# for i in range(10):
+#     if i ==3:
+#         continue   # 遇到 continue 结束后面代码运行 （跳过当前本次循环不输出）重新开始下一个的循环
+#     print(i)
 
 """ 第四天Python的学习 """
-for i in range(10):
-    if i ==3 and 4 and 9:
-        continue
-    print(i)
+
+# def sum(a,b):
+#     """
+#     这个方法的作用时两数相加      # 此注释是方法的说明
+#     """
+#     if type(a) is int and type(b) is int:
+#         return a+b 
+#     else:
+#         return "输入的数据类型不正确！"  # if... else...是方法的逻辑代码
+
+"""
+返回值/return ，返回后我们可以对这个值做其他的操作
+而，print 不能
+"""
+# sum(24,56)  # 方法使用
+
+# a = sum(24,56)
+# print(a+2)    
+
+# 函数/方法   
+# def 方法的声明
+# sum 方法的名字
+# a,b 方法的参数(可以没有)
+# """方法的说明"""
+# 方法的逻辑代码
+
+# 异常捕获
+# try:
+#     print(sum("5",8)+6)
+# except Exception as e:
+#     print("上面的参数有错误",e)
+
+# 异常类/Exception  
+# 代码的单位：包->模块->类->方法->变量   使用的时候是并列关系
+"""包的使用：import 包   直接导入自带的某个包  写在程序最上方
+第三方包的使用：（pip 是管理第三方包的工具） 先下载安装 pip install 包名  / 卸载 pip uninstall 包名
+查找你安装的第三方包有哪些：pip list  
+"""
+# import time  #导入python 时间包
+# for i in range(10):
+#     time.sleep(1)  #停顿一秒的运行
+#     print(i)
+# import random # random 生成随机数
+# a = random.randint(0,100)
+# print(a)
+
+
