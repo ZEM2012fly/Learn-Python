@@ -52,15 +52,15 @@
 # print(Xx)
 
 #判断数据类型 Type
-# a = type(2333)
-# print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
-# print(type("哈哈"))
-# print(type(2333))
-# print(type(2.333))
-# print(type(True))
-# print(type(()))
-# print(type([]))
-# print(type({}))
+a = type(2333)
+print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
+print(type("哈哈"))
+print(type(2333))
+print(type(2.333))
+print(type(True))
+print(type(()))
+print(type([]))
+print(type({}))
 
 #数据类型的转换
 # a = int("2333")
