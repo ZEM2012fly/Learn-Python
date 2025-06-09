@@ -39,10 +39,6 @@
 # print("你的年龄为："+B)
 
 
-zodiac = {'白羊座','金牛座','双子座','巨蟹座','狮子座','处女座','天秤座','天蝎座','射手座','摩羯座','水瓶座','双鱼座'}
-
-
-
 
 """
 练习：
@@ -123,10 +119,10 @@ print(studentlist[a]) =
 练习：
 打印九九乘法表
 """
-for i in range(1,10):
-    for j in range(1,i+1):
-        print(j,"X",i,"=",i*j,end="  ")  
-    print() 
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print(j,"X",i,"=",i*j,end="  ")  
+#     print() 
 
 """
 练习：
@@ -143,67 +139,14 @@ for i in range(1,10):
 通过print打印，模拟一个红绿灯的功能，注意红灯30次，绿灯35次，黄灯3次。
 练习2：
 使用代码，实现一个注册的功能。
-用户输入账号和密码，要求账号长度是5-8位，密码6-12位，并且账号不能以下划线开头。
+用户输入账号和密码，要求账号长度是5-8位，密码6-12位，并且账号必须小写开头。
 储到字典中，{username:password}
 """
 
 "练习一"
-# light = {"红灯":30,"绿灯":35,"黄灯":3}
-# while True: # True 写成 1 也行
-#     for i in light:  # 遍历字典中的 Key值
-#         for j in range(light[i]):  # 第一次循环遍历到红灯时循环30次，绿灯时35次，黄灯时3次
-#             print(i,"倒计时还有：",light[i]-j,"秒") 
-#     break
 
-"练习二"
-# username = input("请注册你的账号名：")
-# password = input("请输入你的密码：")
-# if 5<= len(username) <= 11:
-#     if username[0] not in "-":
-#         if 6<= len(password) <= 12:
-#             print("注册成功!请返回重新登陆验证！")
-#         else:
-#             print("密码必须6-12位")
-#     else:
-#         print("账号的不能以下划线开头！")
-# else:
-#     print("账号的长度不符合规范，请输入5-8位账号")
-
-# Name = input("请输入你的姓名：")
-# Age = input("请输入你的年龄：")
-# try:
-#     if int(Age) >= 18:
-#         print(Name,"已经成年了")
-#     else:
-#         print(Name,"尚未成年")
-# except:
-#     print("请输入正确的年龄")
-""" try:  
-
-    except:
-                使用场景：当我们无法判断用户输入的数据是否正确的情况下
-这也是测试时为什么要输入不同的数据类型，你控制得了编码，但你控制不住用户输入的数据   
-处理用户输入的数据
-"""
-
-"""
-练习：
-定义一个方法，用来判断用户输入的账号密码是否符合规范。
-"""
-
-# def cheakname (username,password):
-#     """
-#     自动判断
-#     账号长度是5-11位，并且账号必须以小写字母开头
-#     密码长度是6-12位
-#     """
-#     if len(username)>=5 and len(username)<=11:
-#         if username[0] in "qazwsxedcrfvtgbyhnujmikolp":
-#             if len(password)>=6 and len(password)<=12:
-#                 return True
-#             else:
-#                 return "密码不符合规范！"
-#         else:
-#             return "账号的首字母必须小写字母开头"
-#     else:
-#         return "账号的长度不符合规范，请输入5-11的账号"
+# # redlight =
+# a = list(range(-30,0))
+# print("红灯",a)
+# # print("黄灯",b)
+# # print("绿灯",c)
