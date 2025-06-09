@@ -9,7 +9,7 @@
 # print([]) #数组
 # print({}) #字典
 #Python的注释分 单行注释： #注释内容  多行注释："""  注释内容  """
-# print("Hello,world!",2333,True)
+#print("Hello,world!",2333,True)
 
 '''
  变量的命名
@@ -22,13 +22,29 @@
 # 字符串的拼接（合并），但是只能相同数据类型操作  不能用减号的 可以用乘号
 # first_name = "ada"
 # last_name ="lovelace"
+# full_name = f"{first_name}{last_name}"  # f-string 格式化字符串的方式，在字符串前加上f，然后在字符串中使用花括号{}来引用变量。
+# print(f"hallo, {full_name.title()}!") # f"Hello, {name}!" 会将变量name的值插入到字符串中的花括号中。
 # full_name = first_name+" "+last_name   # "",引号之间有个空格
 # print("hallo, "+full_name.title()+"!") # .title()将字符串每个单词的首字母改大写  .upper()全部大写 ：.lower()全部小写    hallo，后面有个空格
+
 # a = input ("请输入：")
 # b = input ("请输入：")
 # print("input获取的内容：",a+b) # 数据类型，形成了字符串的拼接 
 # input的特点：不管你输入什么东西，只要是通过input获取的，对于我们代码来说都是字符串
-# print(((1+2)*3-4)/5) #Python的运算
+
+
+##Python的运算符：
+# + - * /  加减乘除    ** 幂运算  2**3  2的三次方  // 取整  2//3  0   % 取余  2%3  2
+# ==  等于 != 不等于
+# > 大于 < 小于 >= 大于等于 <= 小于等于
+# and 与  两个条件同时满足 or 或  两个条件满足一个即可
+# not 非  取反
+# 优先级：
+# 幂运算 > 乘除 > 加减 > 比较运算符 > 逻辑运算符
+# 括号可以改变优先级
+# and 与  两个条件同时满足 or 或  两个条件满足一个即可
+
+# print(((1+2)*3-4)/5) 
 # print(2>3)   
 # print(2<3)
 #变量和赋值
@@ -36,15 +52,15 @@
 # print(Xx)
 
 #判断数据类型 Type
-# a = type(2333)
-# print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
-# print(type("哈哈"))
-# print(type(2333))
-# print(type(2.333))
-# print(type(True))
-# print(type(()))
-# print(type([]))
-# print(type({}))
+a = type(2333)
+print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
+print(type("哈哈"))
+print(type(2333))
+print(type(2.333))
+print(type(True))
+print(type(()))
+print(type([]))
+print(type({}))
 
 #数据类型的转换
 # a = int("2333")
@@ -239,6 +255,7 @@ Python的判断条件
 #     print("是字符串")
 # else:
 #     print("其他") 
+
 """
 while循环语句
 while 表达式：
@@ -260,7 +277,7 @@ while 表达式：
 # for i in a:   # 遍历，每一个都打印一遍  i是一个变量名
 #     print(i)
 
-# range()数列生成器  
+# range()数列生成器    左闭右开   只写一个值，默认从0开始依次
 # b = list(range(100)) #自动生成了一个数列  左闭右开   只写一个值，默认从0开始依次
 # b = list(range(0,100,2)) # 步进/步长  默认从0开始按步进依次
 # print(b)
