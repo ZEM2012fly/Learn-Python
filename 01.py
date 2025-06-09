@@ -52,15 +52,15 @@
 # print(Xx)
 
 #判断数据类型 Type
-a = type(2333)
-print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
-print(type("哈哈"))
-print(type(2333))
-print(type(2.333))
-print(type(True))
-print(type(()))
-print(type([]))
-print(type({}))
+# a = type(2333)
+# print(a) #读取了数据判断其类型为整数（int）  运行结果为：<class 'int'>
+# print(type("哈哈"))
+# print(type(2333))
+# print(type(2.333))
+# print(type(True))
+# print(type(()))
+# print(type([]))
+# print(type({}))
 
 #数据类型的转换
 # a = int("2333")
@@ -100,10 +100,25 @@ print(type({}))
 # print(a.count("Python")) # count统计某个值的数量
 # print("Python" in a) # in 指在  not in 不在
 # print(1 not in a)  #指定的对象判断在不在成员当中，即：成员关系操作符  对象[not]in序列
-# print("\t我要好好学Python\n"*10) #字符串的重复操作： "字符串"*整数
+# print("我要\n好好学\tPython\n"*10) #字符串的重复操作： "字符串"*整数
 ''' 空格与（制表符\t），通俗点说这两个东西的内部表示方法和显示出来的都不一样，编程的时候，空格用" "表示，制表符用"\t"表示
     显示的时候空格就是一个空格 制表符一般显示为四个空格，换行符：\n
 '''
+
+# a = ' !hello    '
+# print(a.rstrip()) # 去掉右边的空格    .lstrip()去掉左边的空格      .strip()去掉两边的空格
+# a = "Hello,Python"
+# print(a.replace("Python","World")) # 字符串的替换功能  字符串.replace("要替换的内容","替换后的内容")
+# print(a) # 字符串的替换功能  字符串.replace("要替换的内容","替换后的内容")
+
+a_url = 'https://weread.qq.com/'
+print(a_url)
+print(a_url.removeprefix('https://'))# 字符串删除前缀
+print(a_url.removesuffix('/'))# 字符串删除后缀
+
+
+
+
 # name= input("Please input your name: ") #字符串的替换功能 %s 替换字符串  %d十进制整数
 # print("Hello, %s good morning!" %name)  #一种字符串格式化的语法， 基本用法是将值插入到 %s占位符的字符串中。%s,表示格式化一个对象为字符 
 # name= str(input("Please input your name: "))
